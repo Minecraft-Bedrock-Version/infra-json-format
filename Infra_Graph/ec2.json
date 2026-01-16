@@ -1,0 +1,39 @@
+{
+  "schema_version": "string",
+  "collected_at": "timestamp",
+  "account_id": "aws_account_id",
+  "nodes": [
+    {
+      "node_type": "resource_type_enum",
+      "node_id": "graph_node_id",
+      "resource_id": "string",
+      "name": "string",
+      "account_id": "aws_account_id",
+      "region": "aws_region",
+      "attributes": {
+        "instance_type": "ec2_instance_type",
+        "state": "resource_state",
+        "public_ip": "true or false",
+        "public_ip_address": "ipv4_address"
+      },
+      "relationships": {
+        "vpc_id": "aws_vpc_id",
+        "subnet_id": "aws_subnet_id",
+        "security_group_ids": [
+          "aws_security_group_id"
+        ],
+        "iam_instance_profile_arn": "aws_iam_instance_profile_arn",
+        "network_interface_ids": [
+          "aws_network_interface_id"
+        ],
+        "ebs_volume_ids": [
+          "aws_ebs_volume_id"
+        ]
+      },
+      "raw_refs": {
+        "source": "aws_api_name",
+        "collected_at": "timestamp"
+      }
+    }
+  ]
+}

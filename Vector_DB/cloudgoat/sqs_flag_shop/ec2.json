@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "node_type": "ec2",
+      "node_id": "graph_node_id",
+      "attributes": {
+        "state": "running",
+        "public_ip": true
+      }
+    }
+  ]
+}

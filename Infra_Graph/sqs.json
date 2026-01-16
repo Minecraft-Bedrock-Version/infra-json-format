@@ -1,0 +1,38 @@
+{
+  "schema_version": "string",
+  "collected_at": "timestamp",
+  "account_id": "aws_account_id",
+  "nodes": [
+    {
+      "node_type": "resource_type_enum", 
+      "node_id": "graph_node_id",
+      "resource_id": "string",
+      "name": "string",
+      "account_id": "aws_account_id", 
+      "region": "aws_region",
+      "attributes": { 
+        "queue_url": "aws_sqs_queue_url",
+        "visibility_timeout": "seconds",
+        "max_message_size": "bytes",
+        "message_retention_period": "seconds",
+        "delay_seconds": "seconds",
+        "receive_wait_time_seconds": "seconds",
+        "sse_enabled": "boolean", 
+        "approximate_number_of_messages": "count",
+        "approximate_number_of_messages_not_visible": "count", 
+        "approximate_number_of_messages_delayed": "count",
+        "created_timestamp": "unix_timestamp",
+        "last_modified_timestamp": "unix_timestamp"
+      },
+      "relationships": {
+        "queue_arn": "aws_sqs_queue_arn" 
+      },
+      "raw_refs": { 
+        "source": [
+          "aws_api_name"
+        ],
+        "collected_at": "timestamp"
+      }
+    }
+  ]
+}

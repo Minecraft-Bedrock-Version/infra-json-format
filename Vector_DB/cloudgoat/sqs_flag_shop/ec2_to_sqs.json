@@ -1,0 +1,8 @@
+{
+  "src": "ec2 node_id",
+  "dst": "sqs node_id",
+  "directed": true,
+  "conditions": [
+    { "sqs" : "추가 예정" }
+  ]
+}
