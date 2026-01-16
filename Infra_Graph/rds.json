@@ -1,0 +1,62 @@
+{
+  "schema_version": "string",
+  "collected_at": "timestamp",
+  "account_id": "string",
+  "nodes": [
+    {
+      "node_type": "rds_instance",
+      "node_id": "string",
+      "resource_id": "string",
+      "name": "string",
+      "account_id": "string",
+      "region": "string",
+      "attributes": {
+        "instance_class": "string",
+        "engine": "string",
+        "engine_version": "string",
+        "status": "string",
+        "db_name": "string",
+        "endpoint_address": "string",
+        "endpoint_port": 0,
+        "allocated_storage": 0,
+        "storage_type": "string",
+        "storage_encrypted": "boolean",
+        "multi_az": "boolean",
+        "publicly_accessible": "boolean",
+        "created_timestamp": "timestamp"
+      },
+      "relationships": {
+        "db_instance_arn": "arn_string",
+        "vpc_id": "string",
+        "subnet_group_name": "string",
+        "security_groups": ["string"],
+        "kms_key_id": "arn_string"
+      },
+      "raw_refs": {
+        "source": ["string"],
+        "collected_at": "timestamp"
+      }
+    },
+    {
+      "node_type": "rds_subnet_group",
+      "node_id": "string",
+      "resource_id": "string",
+      "name": "string",
+      "account_id": "string",
+      "region": "string",
+      "attributes": {
+        "description": "string",
+        "status": "string",
+        "subnets": ["string"]
+      },
+      "relationships": {
+        "subnet_group_arn": "arn_string",
+        "vpc_id": "string"
+      },
+      "raw_refs": {
+        "source": ["string"],
+        "collected_at": "timestamp"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "nodes": [
+    {
+      "node_type": "lambda_function",
+      "node_id": "graph_node_id"
+    },
+    {
+      "node_type": "lambda_event_source_mapping",
+      "node_id": "graph_node_id",
+      "attributes": {
+        "state": "Enabled"
+      },
+      "relationships": {
+        "source_arn": "sqs"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "src": "ec2 node_id",
+  "dst": "rds_instance node_id",
+  "directed": false,
+  "conditions": [
+    { "rds" : "추가 예정" }
+  ]
+}

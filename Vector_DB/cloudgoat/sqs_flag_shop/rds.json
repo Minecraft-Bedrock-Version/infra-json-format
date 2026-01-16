@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "node_type": "sqs",
+      "node_type": "rds_instance",
       "node_id": "graph_node_id"
     }
   ]

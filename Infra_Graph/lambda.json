@@ -1,0 +1,60 @@
+{
+  "schema_version": "string",
+  "collected_at": "timestamp",
+  "account_id": "string",
+  "nodes": [
+    {
+      "node_type": "resource_type_enum",
+      "node_id": "string",
+      "resource_id": "string",
+      "name": "string",
+      "account_id": "string",
+      "region": "string",
+      "attributes": {
+        "runtime": "string",
+        "handler": "string",
+        "code_size": 0,
+        "timeout": 0,
+        "memory_size": 0,
+        "environment_variables": {
+          "string": "string"
+        },
+        "ephemeral_storage_size": 0,
+        "last_modified": "timestamp"
+      },
+      "relationships": {
+        "function_arn": "arn_string",
+        "role_arn": "arn_string",
+        "vpc_id": "string",
+        "security_groups": ["string"],
+        "subnets": ["string"],
+        "log_group": "string"
+      },
+      "raw_refs": {
+        "source": ["string"],
+        "collected_at": "timestamp"
+      }
+    },
+    {
+      "node_type": "resource_type_enum",
+      "node_id": "string",
+      "resource_id": "string",
+      "account_id": "string",
+      "region": "string",
+      "attributes": {
+        "batch_size": 0,
+        "state": "string",
+        "last_modified": "timestamp"
+      },
+      "relationships": {
+        "event_source_mapping_arn": "arn_string",
+        "source_arn": "arn_string",
+        "target_function_arn": "arn_string"
+      },
+      "raw_refs": {
+        "source": ["string"],
+        "collected_at": "timestamp"
+      }
+    }
+  ]
+}

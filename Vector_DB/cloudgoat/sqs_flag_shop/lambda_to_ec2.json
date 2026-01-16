@@ -1,0 +1,8 @@
+{
+  "src": "lambda_function node_id",
+  "dst": "ec2 node_id",
+  "directed": true,
+  "conditions": [
+    { "lambda_format_in_ec2_ip" : true }
+  ]
+}
