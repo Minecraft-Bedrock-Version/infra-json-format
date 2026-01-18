@@ -15,18 +15,6 @@
           }
         ]
       }
-    },
-    {
-      "node_type": "iam_user",
-      "node_id": "string",
-      "attributes": {
-        "attached_policies": [
-          {
-            "PolicyName": "AmazonSQSFullAccess",
-            "PolicyArn": "arn:aws:iam::aws:policy/AmazonSQSFullAccess"
-          }
-        ]
-      }
     }
   ]
 }
