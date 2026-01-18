@@ -4,9 +4,10 @@
   "directed": true,
   "conditions": [
     {
-      "node_type": "lambda_event_source_mapping",
-      "relationships": {
-        "source_arn": "sqs"
+      "lambda_event_source_mapping": {
+        "relationships": {
+          "source_arn": "sqs"
+        }
       }
     }
   ]

@@ -1,38 +1,71 @@
 {
-  "schema_version": "string",
-  "collected_at": "timestamp",
-  "account_id": "aws_account_id",
+  "schema_version": "1.0",
+  "collected_at": "timestmap",
+  "account_id": "string",
   "nodes": [
     {
       "node_type": "resource_type_enum",
-      "node_id": "graph_node_id",
+      "node_id": "string",
       "resource_id": "string",
       "name": "string",
-      "account_id": "aws_account_id",
-      "region": "aws_region",
+      "account_id": "string",
+      "region": "string",
       "attributes": {
-        "instance_type": "ec2_instance_type",
-        "state": "resource_state",
-        "public_ip": "true or false",
-        "public_ip_address": "ipv4_address"
+        "instance_type": "t3.micro",
+        "state": "running",
+        "public": "true or false",
+        "public_ip": "string",
+        "private_ip": "string",
+        "launch_time": "timestmap",
+        "vpc_id": "string",
+        "subnet_id": "string",
+        "key_name": "string",
+        "iam_instance_profile": "string",
+        "security_groups": [
+          {
+            "group_id": "string",
+            "group_name": "string"
+          }
+        ],
+        "sqs_info": {
+          "detected": "true or false",
+          "queue_url": "string"
+        },
+        "rds_info": {
+          "detected": "true or false",
+          "db_endpoint": "string"
+        }
       },
       "relationships": {
-        "vpc_id": "aws_vpc_id",
-        "subnet_id": "aws_subnet_id",
-        "security_group_ids": [
-          "aws_security_group_id"
-        ],
-        "iam_instance_profile_arn": "aws_iam_instance_profile_arn",
-        "network_interface_ids": [
-          "aws_network_interface_id"
-        ],
-        "ebs_volume_ids": [
-          "aws_ebs_volume_id"
-        ]
+        "key_name": "string",
+        "vpc_id": "string",
+        "security_groups": ["string"]
       },
       "raw_refs": {
-        "source": "aws_api_name",
-        "collected_at": "timestamp"
+        "source": ["describe_instances", "describe_instance_attribute(userData)"],
+        "collected_at": "timestmap"
+      }
+    },
+    {
+      "node_type": "resource_type_enum",
+      "node_id": "string",
+      "resource_id": "string",
+      "name": "string",
+      "attributes": {
+        "key_type": "string",
+        "key_fingerprint": "string",
+        "create_time": "timestmap",
+        "tags": {
+          "Scenario": "string",
+          "Stack": "string"
+        }
+      },
+      "relationships": {
+        "used_by_instances": ["string"]
+      },
+      "raw_refs": {
+        "source": ["string"],
+        "collected_at": "timestmap"
       }
     }
   ]

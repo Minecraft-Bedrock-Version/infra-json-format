@@ -13,13 +13,13 @@
       "attributes": {
         "runtime": "string",
         "handler": "string",
-        "code_size": 0,
-        "timeout": 0,
-        "memory_size": 0,
+        "code_size": "integer",
+        "timeout": "integer",
+        "memory_size": "integer",
         "environment_variables": {
           "string": "string"
         },
-        "ephemeral_storage_size": 0,
+        "ephemeral_storage_size": "integer",
         "last_modified": "timestamp"
       },
       "relationships": {
@@ -42,7 +42,7 @@
       "account_id": "string",
       "region": "string",
       "attributes": {
-        "batch_size": 0,
+        "batch_size": "integer",
         "state": "string",
         "last_modified": "timestamp"
       },

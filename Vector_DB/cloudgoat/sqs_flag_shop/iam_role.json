@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "node_type": "iam_role",
+      "node_id": "string",
+      "attributes": {
+        "assume_role_policy": {
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "inline_policies": [
+          {
+            "Statement": [
+              {
+                "Action": ["sqs:GetQueueUrl", "sqs:SendMessage"],
+                "Effect": "Allow"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "nodes": [
+    {
+      "node_type": "internet_gateway",
+      "node_id": "graph_node_id",
+      "attributes": {
+        "state": "available"
+      }
+    }
+  ]
+}

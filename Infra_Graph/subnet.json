@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "collected_at": "timestmap",
+  "account_id": "string",
+  "nodes": [
+    {
+      "node_type": "resource_type_enum",
+      "node_id": "string",
+      "resource_id": "string",
+      "name": "string",
+      "attributes": {
+        "vpc_id": "string",
+        "cidr": "string",
+        "az": "string",
+        "visibility": "string",
+        "route_table_id": "string"
+      },
+      "raw_refs": {
+        "source": ["string"],
+        "collected_at": "timestmap"
+      }
+    }
+  ]
+}

@@ -2,10 +2,15 @@
   "nodes": [
     {
       "node_type": "ec2",
-      "node_id": "graph_node_id",
+      "node_id": "string",
       "attributes": {
-        "state": "running",
-        "public_ip": true
+        "public": true,
+        "sqs_info": {
+          "detected": true
+        },
+        "rds_info": {
+          "detected": true
+        }
       }
     }
   ]

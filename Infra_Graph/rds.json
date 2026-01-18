@@ -4,7 +4,7 @@
   "account_id": "string",
   "nodes": [
     {
-      "node_type": "rds_instance",
+      "node_type": "resource_type_enum",
       "node_id": "string",
       "resource_id": "string",
       "name": "string",
@@ -17,12 +17,12 @@
         "status": "string",
         "db_name": "string",
         "endpoint_address": "string",
-        "endpoint_port": 0,
-        "allocated_storage": 0,
+        "endpoint_port": "integer",
+        "allocated_storage": "integer",
         "storage_type": "string",
-        "storage_encrypted": "boolean",
-        "multi_az": "boolean",
-        "publicly_accessible": "boolean",
+        "storage_encrypted": "true of false",
+        "multi_az": "true or false",
+        "publicly_accessible": "true or false",
         "created_timestamp": "timestamp"
       },
       "relationships": {
@@ -38,7 +38,7 @@
       }
     },
     {
-      "node_type": "rds_subnet_group",
+      "node_type": "resource_type_enum",
       "node_id": "string",
       "resource_id": "string",
       "name": "string",

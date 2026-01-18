@@ -1,0 +1,14 @@
+{
+  "src": "ec2 node_id",
+  "dst": "igw node_id",
+  "directed": false,
+  "conditions": [
+    {
+      "ec2":{
+        "attributes": {
+          "public": true
+        }
+      }
+    }
+  ]
+}

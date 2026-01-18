@@ -1,0 +1,23 @@
+{
+  "src": "iam_user node_id",
+  "dst": "iam_role node_id",
+  "directed": false,
+  "conditions": [
+    {
+      "iam_user":{
+        "attributes": {
+          "inline_policies": [
+            {
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Action": "sts:AssumeRole"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

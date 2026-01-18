@@ -1,0 +1,31 @@
+{
+  "src": "iam_role node_id",
+  "dst": "sqs node_id",
+  "directed": true,
+  "conditions": [
+    {
+      "iam_role":{
+        "attributes": {
+          "assume_role_policy": {
+            "inline_policies": [
+              {
+                "Statement": [
+                  {
+                    "Action": ["sqs:GetQueueUrl", "sqs:SendMessage"],
+                    "Effect": "Allow"
+                  }
+                ]
+              }
+            ],
+            "attached_policies": [
+              {
+                "PolicyName": "AWSLambdaSQSQueueExecutionRole",
+                "PolicyArn": "arn:aws:iam::aws:policy/service-role/AWSLambdaSQSQueueExecutionRole"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -3,6 +3,14 @@
   "dst": "rds_instance node_id",
   "directed": false,
   "conditions": [
-    { "rds" : "추가 예정" }
+    { 
+      "ec2" : {
+        "attributes": {
+          "rds_info": {
+            "detected": true
+          }
+        }
+      } 
+    }
   ]
 }

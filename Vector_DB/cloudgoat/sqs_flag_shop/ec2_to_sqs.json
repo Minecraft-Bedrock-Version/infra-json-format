@@ -3,6 +3,14 @@
   "dst": "sqs node_id",
   "directed": true,
   "conditions": [
-    { "sqs" : "추가 예정" }
+    { 
+      "ec2" : {
+        "attributes": {
+          "sqs_info": {
+            "detected": true
+          }
+        }
+      } 
+    }
   ]
 }

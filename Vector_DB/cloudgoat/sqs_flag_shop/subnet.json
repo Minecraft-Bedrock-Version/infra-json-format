@@ -1,0 +1,11 @@
+{
+  "nodes": [
+    {
+      "node_type": "subnet",
+      "node_id": "string",
+      "attributes": {
+        "visibility": "public"
+      }
+    }
+  ]
+}

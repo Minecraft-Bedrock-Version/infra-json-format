@@ -1,35 +1,35 @@
 {
   "schema_version": "string",
   "collected_at": "timestamp",
-  "account_id": "aws_account_id",
+  "account_id": "string",
   "nodes": [
     {
-      "node_type": "resource_type_enum", 
-      "node_id": "graph_node_id",
+      "node_type": "resource_type_enum",
+      "node_id": "string",
       "resource_id": "string",
       "name": "string",
-      "account_id": "aws_account_id", 
-      "region": "aws_region",
-      "attributes": { 
-        "queue_url": "aws_sqs_queue_url",
-        "visibility_timeout": "seconds",
-        "max_message_size": "bytes",
-        "message_retention_period": "seconds",
-        "delay_seconds": "seconds",
-        "receive_wait_time_seconds": "seconds",
-        "sse_enabled": "boolean", 
-        "approximate_number_of_messages": "count",
-        "approximate_number_of_messages_not_visible": "count", 
-        "approximate_number_of_messages_delayed": "count",
+      "account_id": "string",
+      "region": "string",
+      "attributes": {
+        "queue_url": "url_string",
+        "visibility_timeout": "integer",
+        "max_message_size": "integer",
+        "message_retention_period": "integer",
+        "delay_seconds": "integer",
+        "receive_wait_time_seconds": "integer",
+        "sse_enabled": "boolean",
+        "approximate_number_of_messages": "integer",
+        "approximate_number_of_messages_not_visible": "integer",
+        "approximate_number_of_messages_delayed": "integer",
         "created_timestamp": "unix_timestamp",
         "last_modified_timestamp": "unix_timestamp"
       },
       "relationships": {
-        "queue_arn": "aws_sqs_queue_arn" 
+        "queue_arn": "arn_string"
       },
-      "raw_refs": { 
+      "raw_refs": {
         "source": [
-          "aws_api_name"
+          "string"
         ],
         "collected_at": "timestamp"
       }

@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "collected_at": "timestamp",
+  "account_id": "string",
+  "nodes": [
+    {
+      "node_type": "resource_type_enum",
+      "node_id": "string",
+      "resource_id": "string",
+      "name": "string",
+      "attributes": {
+        "arn": "arn_string",
+        "assume_role_policy": {
+          "Statement": [
+            {
+              "Effect": "enum(Allow|Deny)",
+              "Principal": { "string": "string" },
+              "Action": "string"
+            }
+          ]
+        },
+        "inline_policies": [
+          {
+            "PolicyName": "string",
+            "Statement": [
+              {
+                "Action": ["string"],
+                "Effect": "enum(Allow|Deny)",
+                "Resource": "string"
+              }
+            ]
+          }
+        ],
+        "attached_policies": [
+          {
+            "PolicyName": "string",
+            "PolicyArn": "arn_string",
+            "Statement": [
+              {
+                "Effect": "enum(Allow|Deny)",
+                "Action": [
+                  "string"
+                ],
+                "Resource": "string"
+              }
+            ]
+          }
+        ]
+      },
+      "raw_refs": {
+        "source": [
+          "string"
+        ],
+        "collected_at": "timestamp"
+      }
+    }
+  ]
+}

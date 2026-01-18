@@ -1,0 +1,11 @@
+{
+  "nodes": [
+    {
+      "node_type": "route_table",
+      "node_id": "string",
+      "attributes": {
+        "type": "public"
+      }
+    }
+  ]
+}
