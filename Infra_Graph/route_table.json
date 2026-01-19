@@ -8,8 +8,6 @@
       "node_id": "string",
       "resource_id": "string",
       "name": "string",
-      "account_id": "string",
-      "region": "string",
       "attributes": {
         "vpc_id": "string",
         "type": "string",
