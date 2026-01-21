@@ -1,8 +1,10 @@
 {
-  "id": "edge-uuid",
+  "id": "edge-uuid", 
   "relation": "relation_type_enum",
   "src": "node_id",
+  "src_label": "{resource_type}:{name}",
   "dst": "node_id",
-  "directed": "boolean",
+  "dst_label": "{resource_type}:{name}",
+  "directed": true,
   "conditions": []
 }
