@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "node_type": "iam_role",
+      "node_id": "string",
+      "attributes": {
+        "assume_role_policy": {
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": ["sts:AssumeRole"]
+            }
+          ]
+        },
+        "inline_policies": [],
+        "attached_policies": [
+          {
+            "PolicyName": "AdministratorAccess",
+            "Statement": [
+              {
+                "Effect": "Allow",
+                "Action": ["*"]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "node_type": "iam_role",
+      "node_id": "string",
+      "attributes": {
+        "assume_role_policy": {
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": ["sts:AssumeRole"]
+            }
+          ]
+        },
+        "inline_policies": [],
+        "attached_policies": [
+          {
+            "PolicyName": "string",
+            "Statement": [
+              {
+                "Effect": "Allow",
+                "Action": ["lambda:*", "iam:PassRole"]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "src": "iam_role node_id",
+  "dst": "lambda_service node_id",
+  "directed": false,
+  "conditions": [
+    {
+      "iam_role": {
+        "attributes": {
+          "assume_role_policy": [
+            {
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Action": ["sts:AssumeRole"],
+                  "Principal": { "Service": "lambda.amazonaws.com" }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "node_type": "iam_user",
+      "node_id": "string",
+      "attributes": {
+        "inline_policies": [],
+        "attached_policies": [
+          {
+            "PolicyName": "string",
+            "Statement": [
+              {
+                "Effect": "Allow",
+                "Action": ["sts:AssumeRole", "iam:List*", "iam:Get*"]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

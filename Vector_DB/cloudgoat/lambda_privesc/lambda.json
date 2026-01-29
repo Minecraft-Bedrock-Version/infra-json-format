@@ -1,0 +1,8 @@
+{
+  "nodes": [
+    {
+      "node_type": "lambda_service",
+      "node_id": "string"
+    }
+  ]
+}
