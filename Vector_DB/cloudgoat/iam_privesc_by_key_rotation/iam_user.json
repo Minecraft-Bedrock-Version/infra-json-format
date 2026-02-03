@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "node_type": "iam_user",
+      "node_id": "string",
+      "attributes": {
+        "inline_policies": [
+          {
+            "Statement": [
+              {
+                "Effect": "Allow",
+                "Action": ["sts:AssumeRole"]
+              }
+            ]
+          }
+        ],
+        "attached_policies": [
+          {
+            "PolicyName": "IAMReadOnlyAccess",
+            "Statement": [
+              {
+                "Effect": "Allow",
+                "Action": [
+                  "iam:GenerateCredentialReport",
+                  "iam:GenerateServiceLastAccessedDetails",
+                  "iam:Get*",
+                  "iam:List*",
+                  "iam:SimulateCustomPolicy",
+                  "iam:SimulatePrincipalPolicy"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "node_type": "iam_user",
+      "node_id": "907808569602:global:iam_user:AIDA5GXM3PEBGEDAWFXMI",
+      "attributes": {
+        "inline_policies": [
+          {
+            "Statement": [
+              {
+                "Effect": "Allow",
+                "Action": ["secretsmanager:ListSecrets"]
+              }
+            ]
+          }
+        ],
+        "attached_policies": []
+      }
+    },
+    {
+      "node_type": "iam_user",
+      "node_id": "907808569602:global:iam_user:AIDA5GXM3PEBG6WQCUMCN",
+      "attributes": {
+        "inline_policies": [
+          {
+            "Statement": [
+              {
+                "Effect": "Allow",
+                "Action": [
+                  "iam:DeactivateMFADevice",
+                  "iam:GetMFADevice",
+                  "iam:EnableMFADevice",
+                  "iam:ResyncMFADevice",
+                  "iam:DeleteAccessKey",
+                  "iam:UpdateAccessKey",
+                  "iam:CreateAccessKey"
+                ]
+              },
+              {
+                "Effect": "Allow",
+                "Action": [
+                  "iam:DeleteVirtualMFADevice",
+                  "iam:CreateVirtualMFADevice"
+                ]
+              }
+            ]
+          },
+          {
+            "Statement": [
+              {
+                "Effect": "Allow",
+                "Action": [
+                  "iam:UntagUser",
+                  "iam:UntagRole",
+                  "iam:TagRole",
+                  "iam:UntagMFADevice",
+                  "iam:UntagPolicy",
+                  "iam:TagMFADevice",
+                  "iam:TagPolicy",
+                  "iam:TagUser"
+                ]
+              }
+            ]
+          }
+        ],
+        "attached_policies": [
+          {
+            "PolicyName": "IAMReadOnlyAccess",
+            "Statement": [
+              {
+                "Effect": "Allow",
+                "Action": [
+                  "iam:GenerateCredentialReport",
+                  "iam:GenerateServiceLastAccessedDetails",
+                  "iam:Get*",
+                  "iam:List*",
+                  "iam:SimulateCustomPolicy",
+                  "iam:SimulatePrincipalPolicy"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

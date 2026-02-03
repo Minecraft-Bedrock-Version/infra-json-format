@@ -1,0 +1,34 @@
+{
+  "nodes": [
+    {
+      "node_type": "iam_role",
+      "node_id": "string",
+      "attributes": {
+        "assume_role_policy": {
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": ["sts:AssumeRole"]
+            }
+          ]
+        },
+        "inline_policies": [],
+        "attached_policies": [
+          {
+            "PolicyName": "cg_view_secrets_cgidm916lic95e",
+            "Statement": [
+              {
+                "Effect": "Allow",
+                "Action": ["secretsmanager:ListSecrets"]
+              },
+              {
+                "Effect": "Allow",
+                "Action": ["secretsmanager:GetSecretValue"]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
