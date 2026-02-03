@@ -1,0 +1,23 @@
+{
+  "src": "iam_role node_id",
+  "dst": "iam_role node_id",
+  "directed": true,
+  "conditions": [
+    {
+      "iam_role": {
+        "attributes": {
+          "attached_policies": [
+            {
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Action": ["iam:PassRole"]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
