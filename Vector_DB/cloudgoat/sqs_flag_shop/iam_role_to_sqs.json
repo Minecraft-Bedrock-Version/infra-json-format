@@ -19,7 +19,7 @@
             ],
             "attached_policies": [
               {
-                "PolicyName": "AWSLambdaSQSQueueExecutionRole",
+                "PolicyName": "string",
                 "PolicyArn": "arn:aws:iam::aws:policy/service-role/AWSLambdaSQSQueueExecutionRole"
               }
             ]
