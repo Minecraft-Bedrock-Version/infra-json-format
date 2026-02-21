@@ -15,7 +15,7 @@
         "inline_policies": [],
         "attached_policies": [
           {
-            "PolicyName": "cg_view_secrets_cgidm916lic95e",
+            "PolicyName": "string",
             "Statement": [
               {
                 "Effect": "Allow",
@@ -32,3 +32,4 @@
     }
   ]
 }
+
