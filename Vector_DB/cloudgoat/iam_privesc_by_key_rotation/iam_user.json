@@ -16,7 +16,7 @@
         ],
         "attached_policies": [
           {
-            "PolicyName": "IAMReadOnlyAccess",
+            "PolicyName": "string",
             "Statement": [
               {
                 "Effect": "Allow",
@@ -119,3 +119,4 @@
     }
   ]
 }
+
