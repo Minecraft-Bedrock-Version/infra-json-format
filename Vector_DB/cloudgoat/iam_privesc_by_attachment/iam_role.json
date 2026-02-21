@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {
+      "node_id": "node_id",
+      "type": "iam_role",
+      "name": "string",
+      "properties": {
+        "assume_role_policy": {
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "sts:AssumeRole",
+              "Principal": {
+                "Service": "ec2.amazonaws.com"
+              }
+            }
+          ]
+        },
+        "inline_policies": [],
+        "attached_policies": [
+          {
+            "PolicyName": "string",
+            "Statement": [
+              {
+                "Action": "*",
+                "Effect": "Deny",
+                "Resource": "*"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "node_id": "node_id",
+      "type": "iam_role",
+      "name": "string",
+      "properties": {
+        "assume_role_policy": {
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "sts:AssumeRole",
+              "Principal": {
+                "Service": "ec2.amazonaws.com"
+              }
+            }
+          ]
+        },
+        "inline_policies": [],
+        "attached_policies": [
+          {
+            "PolicyName": "string",
+            "Statement": [
+              {
+                "Action": "*",
+                "Effect": "Allow",
+                "Resource": "*"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

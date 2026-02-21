@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "node_id": "node_id",
+      "type": "iam_user",
+      "name": "string",
+      "properties": {
+        "inline_policies": [],
+        "attached_policies": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "iam:AddRoleToInstanceProfile",
+              "iam:ListInstanceProfiles",
+              "iam:ListRoles",
+              "iam:PassRole",
+              "iam:RemoveRoleFromInstanceProfile"
+            ],
+            "Resource": "*"
+          },
+          {
+            "Effect": "Allow",
+            "Action": [
+              "ec2:AssociateIamInstanceProfile",
+              "ec2:CreateKeyPair",
+              "ec2:DescribeIamInstanceProfileAssociations",
+              "ec2:DescribeInstances",
+              "ec2:DescribeSecurityGroups",
+              "ec2:DescribeSubnets",
+              "ec2:DescribeVpcs",
+              "ec2:RunInstances"
+            ],
+            "Resource": "*"
+          }
+        ],
+        "group_policies": []
+      }
+    }
+  ]
+}
